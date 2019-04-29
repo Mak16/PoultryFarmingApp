@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Poultry Farming App</string>
+    <string name="loginby">LoginBy -</string>
+
+    <string-array name="login_by">
+        <item>User</item>
+        <item>Volunteer</item>
+        <item>Admin</item>
+    </string-array>
+
+</resources>

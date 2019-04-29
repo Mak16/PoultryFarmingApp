@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/gallilnalogo"
+        android:id="@+id/img_login_galli"
+        android:layout_marginTop="30dp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/ll_login_by"
+        android:layout_below="@+id/img_login_galli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loginby"
+            android:layout_weight="50"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#00AF50"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_login_by"
+            android:spinnerMode="dropdown"
+            android:soundEffectsEnabled="true"
+            android:entries="@array/login_by"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_login_by"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/light_line_color"
+            android:id="@+id/view_line"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Login"
+                 android:textStyle="bold"
+                android:textSize="22sp"
+                 android:layout_weight="60"
+                 android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Need an account?Sign U"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_weight="40"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/low_light_line_color"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="4dp"
+            />
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="4dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_always_logged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Keep me logged in"
+                android:layout_weight="60"
+                />
+
+            <Button
+                android:id="@+id/bt_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:text="Sign In"
+                android:background="#2196F3"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/light_line_color"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot your password ?"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#9C27B0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skip Login"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="#4CAF50"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
